@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tes Coding</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<!-- soal No 5 -->
+<body>
+	<div class="container">  
+		<form id="contact" >
+			<h3>Nilai Perbandingan</h3>
+			<fieldset>
+				<input name="angka1" type="text" id="input_form" value="4" required autofocus>
+			</fieldset>
+			<fieldset>
+				<input name="angka2" type="text" id="input_form2" value="5" tabindex="2" required>
+			</fieldset>
+			<fieldset>
+				<input name="angka3" type="text" id="input_form3" value="1" tabindex="3" required>
+			</fieldset>
+			<fieldset>
+				<input name="angka4" type="text" id="input_form4" value="7" tabindex="4" required>
+			</fieldset>
+			<fieldset>
+				<input name="angka5" type="text" id="input_form5" value="9" tabindex="5" required>
+			</fieldset>
+			<fieldset>
+				<button name="submit" type="submit" id="tombol_form">Hitung</button>
+			</fieldset>
+			<fieldset>
+				<h3> Hasil : <span tabindex="6" id="hasil" >
+					<script>
+						var numberCollection = [4,5,1,7,9];
+						numberCollection.sort()
+						var maxdiff = (numberCollection [numberCollection.length-1] - numberCollection[0])
+						document.write(maxdiff.toString())
+					</script>
+				</span> </h3>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
